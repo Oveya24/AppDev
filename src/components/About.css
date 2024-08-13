@@ -1,0 +1,45 @@
+
+  /* About Page Specific CSS */
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .about-text {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .about-text h1 {
+    color: #ff5f0f;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+  }
+  
+  .about-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .about-text li {
+    margin-bottom: 10px;
+  }
+  
+  .about-text ul, .about-text li {
+    color: #333;
+  }
+  

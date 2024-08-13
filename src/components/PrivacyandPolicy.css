@@ -1,0 +1,102 @@
+/* Default styles (mobile-first) */
+.privacy-policy-container {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 100%; /* Full width for small screens */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 12px; /* Rounded corners for a modern look */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center text inside the container */
+  }
+  
+  .privacy-policy-title {
+    color: #ff5f0f; /* Highlighted color for the title */
+    font-size: 2em; /* Smaller title size for mobile */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  .privacy-policy-card {
+    background-color: #fff; /* Card background for contrast */
+    border-radius: 8px; /* Rounded corners for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for card depth */
+    padding: 15px;
+    margin: 10px; /* Margin for spacing between cards */
+    text-align: left; /* Left-align text for readability */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effects */
+    flex: 1 1 22%; /* Flexible card size with a minimum width */
+    max-width: 300px; /* Maximum width to maintain square-like appearance */
+    min-height: 200px; /* Minimum height for uniformity */
+    overflow: hidden; /* Hide overflow text */
+  }
+  
+  .privacy-policy-card:hover {
+    transform: scale(1.03); /* Slightly enlarge the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .privacy-policy-subtitle {
+    color: #333; /* Dark text for subtitles */
+    font-size: 1.2em; /* Smaller subtitle size */
+    margin-bottom: 10px; /* Space below subtitle */
+  }
+  
+  .privacy-policy-text {
+    color: #555; /* Softer text color for readability */
+    font-size: 0.9em; /* Smaller text size */
+    line-height: 1.5; /* Adequate line spacing for readability */
+    margin-bottom: 10px; /* Space below paragraphs */
+    max-height: 80px; /* Limit text height */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+  }
+  
+  /* Tablet styles */
+  @media (min-width: 768px) {
+    .privacy-policy-container {
+      max-width: 80%; /* Adjusted width for tablets */
+      padding: 30px;
+    }
+  
+    .privacy-policy-title {
+      font-size: 2.2em; /* Larger title for tablets */
+    }
+  
+    .privacy-policy-subtitle {
+      font-size: 1.4em; /* Larger subtitle */
+    }
+  
+    .privacy-policy-text {
+      font-size: 1em; /* Standard text size for tablets */
+    }
+  }
+  
+  /* Desktop styles */
+  @media (min-width: 1024px) {
+    .privacy-policy-container {
+      max-width: 90%; /* Fit container within desktop screen */
+      padding: 40px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start; /* Align items to the start */
+    }
+  
+    .privacy-policy-card {
+      flex: 1 1 22%; /* Responsive card size */
+      margin: 15px; /* Margin for spacing between cards */
+    }
+  
+    .privacy-policy-title {
+      font-size: 2.8em; /* Prominent title for desktops */
+    }
+  
+    .privacy-policy-subtitle {
+      font-size: 1.6em; /* Larger subtitle */
+    }
+  
+    .privacy-policy-text {
+      font-size: 1.1em; /* Larger text for desktops */
+    }
+  }
+  

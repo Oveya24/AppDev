@@ -1,0 +1,141 @@
+/* Home.css */
+
+/* Container for the home page grid layout */
+.home-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px; /* Gutter between columns */
+    padding: 20px;
+    align-items: center;
+  }
+  
+  /* Styling for the SVG image */
+  .home-image {
+    grid-column: span 3; 
+    margin-left: -30%; /* Move image left */
+    margin-top: 20%; /* Move image further down */
+    position: relative; /* Ensure positioning adjustments are effective */
+  }
+  
+  .home-image img {
+    width: 100%; /* Ensure the image scales responsively */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 400px; /* Set a maximum width for larger screens */
+  }
+  
+  /* Styling for text content */
+  .home-text {
+    margin-left: 10%;
+    grid-column: span 8; /* Adjust to span 8 out of 12 columns */
+  }
+  
+  /* Navbar styling */
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .home-container {
+        grid-template-columns: 1fr; /* Stack columns vertically on small screens */
+        text-align: center; /* Center text content */
+    }
+  
+    .home-image {
+        grid-column: 1 / -1; /* Full width for the image on small screens */
+        justify-self: center; /* Center the image */
+        margin-left: 0; /* Remove left margin */
+        margin-top: 20px; /* Adjust margin to push the image down */
+    }
+  
+    .home-text {
+      grid-column: 1 / -1; /* Full width for text on small screens */
+      margin-left: 0; /* Remove left margin */
+    }
+  
+  
+  }
+  
+  /* Ghost button styling */
+  .ghost-button {
+    background-color: transparent; /* Transparent background */
+    border: 1.5px solid #FF5F0F; /* Border color */
+    color: #FF5F0F !important; /* Text color */ 
+    padding: 8px 13px; /* Padding around the text */
+    font-size: 16px; /* Font size */
+    font-weight: bold ; /* Font weight */
+    text-transform: uppercase; /* Uppercase text */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition */
+    outline: none; /* Remove default outline */
+    text-decoration: none; /* Remove underline from text */
+    position: relative; /* Relative positioning to adjust with top */
+    top: -8px; /* Move the button up by 10px, adjust as needed */
+  }
+  
+  .ghost-button:hover,
+  .ghost-button:focus {
+    background-color: #FF5F0F; /* Background color on hover/focus */
+    color: #fff !important; /* Text color on hover/focus */
+    text-decoration: none !important;
+  }
+  
+  /* Start Now button styling */
+  .start-button {
+    display: inline-block;
+    background-color: #FF5F0F; /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Font weight */
+    text-transform: uppercase; /* Uppercase text */
+    border-radius: 4px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: all 0.3s ease; /* Smooth transition */
+    margin-top: 20px; /* Space above the button */
+  }
+  
+  .start-button:hover,
+  .start-button:focus {
+    background-color: #e04f00; /* Darker background on hover/focus */
+    transform: scale(1.1);
+    outline: none; /* Remove default outline */
+  }
+  
+  h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: -60px;
+    line-height: 55px;
+    /* margin-bottom: 10px; */
+
+  }
+  
+  .highlight-timetrek {
+    color: #FF5F0F;
+  }
+  
+  .desp {
+    font-size: 16px; /* Adjust the font size */
+    line-height: 1.5; /* Adjust the line height for readability */
+    max-width: 450px; /* Adjust the max width to control text wrapping */
+    margin-right: 40px;
+    font-weight: 500;
+  }
+  
+  .sub-title {
+    margin-top: -30px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.5px;
+    padding-left: 10px;
+  }
+  
+  
+  .button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+  }

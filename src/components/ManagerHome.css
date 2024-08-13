@@ -1,0 +1,193 @@
+/* Container for the manager home page grid layout */
+.manager-home-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px; /* Gutter between columns */
+  padding: 20px;
+  align-items: center;
+}
+
+/* Styling for the SVG image */
+.manager-home-image {
+  grid-column: span 3; 
+  margin-left: -30%; /* Move image left */
+  margin-top: 20%; /* Move image further down */
+  position: relative; /* Ensure positioning adjustments are effective */
+}
+
+.manager-home-image img {
+  width: 100%; /* Ensure the image scales responsively */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: 400px; /* Set a maximum width for larger screens */
+}
+
+/* Styling for text content */
+.manager-home-text {
+  margin-left: 10%;
+  grid-column: span 8; /* Adjust to span 8 out of 12 columns */
+}
+
+/* Navbar styling */
+.navbar {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff; /* Optional background color */
+}
+
+.navbar-logo {
+  width: 150px;
+  height: auto;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px; /* Space between navigation items */
+}
+
+.navbar-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+.menu-icon {
+  display: none; /* Hide the menu icon by default */
+  cursor: pointer;
+}
+
+.menu-icon img {
+  width: 30px;
+  height: auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .manager-home-container {
+      grid-template-columns: 1fr; /* Stack columns vertically on small screens */
+      text-align: center; /* Center text content */
+  }
+
+  .manager-home-image {
+      grid-column: 1 / -1; /* Full width for the image on small screens */
+      justify-self: center; /* Center the image */
+      margin-left: 0; /* Remove left margin */
+      margin-top: 20px; /* Adjust margin to push the image down */
+  }
+
+  .manager-home-text {
+      grid-column: 1 / -1; /* Full width for text on small screens */
+      margin-left: 0; /* Remove left margin */
+  }
+
+  .navbar-links {
+      display: none; /* Hide the links by default on small screens */
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 60px; /* Adjust as necessary */
+      right: 0;
+      background-color: white; /* Optional background color */
+      width: 200px; /* Adjust as necessary */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional box shadow */
+      padding: 10px; /* Optional padding */
+  }
+
+  .navbar-links.open {
+      display: flex; /* Show the links when the menu is open */
+  }
+
+  .menu-icon {
+      display: block; /* Show the menu icon on small screens */
+  }
+}
+
+/* Ghost button styling */
+.manager-ghost-button {
+  background-color: transparent; /* Transparent background */
+  border: 1.5px solid #FF5F0F; /* Border color */
+  color: #FF5F0F !important; /* Text color */ 
+  padding: 8px 13px; /* Padding around the text */
+  font-size: 16px; /* Font size */
+  font-weight: bold ; /* Font weight */
+  text-transform: uppercase; /* Uppercase text */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition */
+  outline: none; /* Remove default outline */
+  text-decoration: none; /* Remove underline from text */
+  position: relative; /* Relative positioning to adjust with top */
+  top: -8px; /* Move the button up by 10px, adjust as needed */
+}
+
+.manager-ghost-button:hover,
+.manager-ghost-button:focus {
+  background-color: #FF5F0F; /* Background color on hover/focus */
+  color: #fff !important; /* Text color on hover/focus */
+  text-decoration: none !important;
+}
+
+/* Start Now button styling */
+.manager-start-button {
+  display: inline-block;
+  background-color: #FF5F0F; /* Background color */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Padding */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Font weight */
+  text-transform: uppercase; /* Uppercase text */
+  border-radius: 4px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  transition: all 0.3s ease; /* Smooth transition */
+  margin-top: 20px; /* Space above the button */
+}
+
+.manager-start-button:hover,
+.manager-start-button:focus {
+  background-color: #e04f00; /* Darker background on hover/focus */
+  transform: scale(1.1);
+  outline: none; /* Remove default outline */
+}
+
+.manager-home-title {
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: -60px;
+  line-height: 55px;
+}
+
+.manager-highlight-timetrek {
+  color: #FF5F0F;
+}
+
+.manager-desp {
+  font-size: 16px; /* Adjust the font size */
+  line-height: 1.5; /* Adjust the line height for readability */
+  max-width: 450px; /* Adjust the max width to control text wrapping */
+  margin-right: 40px;
+  font-weight: 500;
+}
+
+.manager-sub-title {
+  margin-top: -30px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-size: 9px;
+  font-weight: 300;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.5px;
+  padding-left: 10px;
+}
+
+.manager-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}

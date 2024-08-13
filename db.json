@@ -1,0 +1,158 @@
+{
+  "users": [
+    {
+      "id": "df21",
+      "email": "nswarna2024@gmail.com",
+      "password": "12345678",
+      "role": "staff",
+      "organization": "SKCET"
+    },
+    {
+      "id": "4a34",
+      "email": "nminesh@gmail.com",
+      "password": "123456781234",
+      "role": "staff",
+      "organization": "SKCET"
+    },
+    {
+      "id": "14f4",
+      "email": "nswarna2004@gmail.com",
+      "password": "qwertyuiop",
+      "role": "staff",
+      "organization": "SKCET"
+    },
+    {
+      "id": "d4b5",
+      "email": "nik@gmail.com",
+      "password": "12345678",
+      "role": "staff",
+      "organization": "THE CW"
+    },
+    {
+      "id": "49cf",
+      "email": "hayley@gmail.com",
+      "password": "123456781234",
+      "role": "staff",
+      "organization": "SKCET"
+    },
+    {
+      "id": "b1c7",
+      "email": "kk@gmail.com",
+      "password": "12345678",
+      "role": "staff",
+      "organization": "SKCET"
+    },
+    {
+      "id": "f65a",
+      "email": "nswarna2024@gmail.com",
+      "password": "12345678",
+      "role": "staff",
+      "organization": "SKCET"
+    },
+    {
+      "id": "1242",
+      "email": "nswarna2024@gmail.com",
+      "password": "12345678",
+      "role": "staff",
+      "organization": "SKCET"
+    },
+    {
+      "id": "b022",
+      "email": "roov2004@gmail.com",
+      "password": "12345678",
+      "role": "manager",
+      "organization": "SKCET"
+    },
+    {
+      "id": "d4a8",
+      "email": "nswarna2024@gmail.com",
+      "password": "1234567",
+      "role": "staff",
+      "organization": "SKCET"
+    },
+    {
+      "id": "22b2",
+      "email": "nswarna24@gmail.com",
+      "password": "1234567",
+      "role": "manager",
+      "organization": "12345678"
+    },
+    {
+      "id": "f98f",
+      "email": "niks@gmail.com",
+      "password": "12345678",
+      "role": "manager",
+      "organization": "THE CW"
+    },
+    {
+      "id": "5967",
+      "email": "roov2004@gmail.com",
+      "password": "12345678",
+      "role": "manager",
+      "organization": "SKCET"
+    },
+    {
+      "id": "4ea8",
+      "email": "nik45678@gmail.com",
+      "password": "12345678",
+      "role": "manager",
+      "organization": "THE CW"
+    },
+    {
+      "id": "5e96",
+      "email": "nswarna2024@gmail.com",
+      "password": "12345678",
+      "role": "staff",
+      "organization": "SKCET"
+    },
+    {
+      "id": "1bab",
+      "email": "nikoo@gmail.com",
+      "password": "12345678",
+      "role": "staff",
+      "organization": "SKCET"
+    },
+    {
+      "id": "9fdb",
+      "email": "nswarna2024@gmail.com",
+      "password": "12345678",
+      "role": "staff",
+      "organization": "SKCET"
+    },
+    {
+      "id": "4af8",
+      "email": "shruthi@gmail.com",
+      "password": "123456",
+      "role": "manager",
+      "organization": "SKCET"
+    },
+    {
+      "id": "00f1",
+      "email": "nswarna2024@gmail.com",
+      "password": "12345678",
+      "role": "staff",
+      "organization": "SKCET"
+    },
+    {
+      "id": "6e67",
+      "email": "sivaramjioo5@gamil.com",
+      "password": "qwerty",
+      "role": "staff",
+      "organization": "SKCET"
+    },
+    {
+      "id": "4869",
+      "email": "suja@gmail.com",
+      "password": "12345678",
+      "role": "staff",
+      "organization": "SKCET"
+    },
+    {
+      "id": "5b8a",
+      "email": "nswarna2024@gmail.com",
+      "password": "12345678",
+      "role": "staff",
+      "organization": "SKCET"
+    }
+  ]
+}

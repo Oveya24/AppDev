@@ -1,0 +1,59 @@
+/* Theme color */
+:root {
+    --theme-color: #FF5F00; /* Adjust to your theme color */
+  }
+  
+  .view-schedule-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .view-schedule-title {
+    text-align: center;
+    color: var(--theme-color);
+    margin-bottom: 20px;
+  }
+  
+  .view-schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .view-schedule-table th,
+  .view-schedule-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .view-schedule-table th {
+    background-color: var(--theme-color);
+    color: #fff;
+  }
+  
+  .view-schedule-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .view-schedule-table tr:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.02);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .delete-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+  }
+  

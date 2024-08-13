@@ -1,0 +1,98 @@
+/* General wrapper styling */
+.testimonial-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* General card styling */
+.testimonial-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Content inside the card */
+.testimonial-content {
+  text-align: center;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.author-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author-details {
+  text-align: left;
+}
+
+.author-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.author-role {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Next button styling */
+.next-button,
+.prev-button {
+  background-color: transparent;
+  color: #ff5f0f;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.next-button {
+  right: -70px; /* Position the button on the right side */
+}
+
+.prev-button {
+  left: -70px; /* Position the button on the left side */
+}
+
+.next-button:hover,
+.next-button:focus,
+.prev-button:hover,
+.prev-button:focus {
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  outline: none; /* Remove default outline */
+}

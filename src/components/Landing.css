@@ -1,0 +1,173 @@
+
+/* Container for the landing page grid layout */
+.landing-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px; /* Gutter between columns */
+  padding: 20px;
+  align-items: center;
+}
+
+/* Styling for the SVG image */
+.landing-image {
+  grid-column: span 4; /* Adjust to span 4 out of 12 columns */
+  /* justify-self: end; Align image to the right side */
+  margin-left: -50%;  /*Move image left*/
+  margin-top: 30%; /* Move image further down */
+  position: relative; /* Ensure positioning adjustments are effective */
+}
+
+.landing-image img {
+  width: 100%; /* Ensure the image scales responsively */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: 600px; /* Set a maximum width for larger screens */
+}
+
+/* Styling for text content */
+.landing-text {
+  margin-left: 10%;
+  grid-column: span 8; /* Adjust to span 8 out of 12 columns */
+}
+
+/* Navbar styling */
+.navbar {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-logo {
+  margin-left: 6%;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  margin-right: 12%;
+  display: flex;
+  gap: 20px; /* Space between navigation items */
+}
+
+.navbar-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .landing-container {
+      grid-template-columns: 1fr; /* Stack columns vertically on small screens */
+      text-align: center; /* Center text content */
+  }
+
+  .landing-image {
+      grid-column: 1 / -1; /* Full width for the image on small screens */
+      justify-self: center; /* Center the image */
+      margin-left: 0; /* Remove left margin */
+      margin-top: 20px; /* Adjust margin to push the image down */
+      
+  }
+
+ 
+}
+
+/* Ghost button styling */
+.ghost-button {
+  background-color: transparent; /* Transparent background */
+  border: 1.5px solid #FF5F0F; /* Border color */
+  color: #FF5F0F !important; /* Text color */ 
+  padding: 8px 13px; /* Padding around the text */
+  font-size: 16px; /* Font size */
+  font-weight: bold ; /* Font weight */
+  text-transform: uppercase; /* Uppercase text */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition */
+  outline: none; /* Remove default outline */
+  text-decoration: none; /* Remove underline from text */
+  position: relative; /* Relative positioning to adjust with top */
+  top: -8px; /* Move the button up by 10px, adjust as needed */
+}
+
+.ghost-button:hover,
+.ghost-button:focus {
+  background-color: #FF5F0F; /* Background color on hover/focus */
+  color: #fff !important; /* Text color on hover/focus */
+  text-decoration: none !important;
+}
+
+/* Start Now button styling */
+.start-button {
+  display: inline-block;
+  background-color: #FF5F0F; /* Background color */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Padding */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Font weight */
+  text-transform: uppercase; /* Uppercase text */
+  border-radius: 4px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  transition: all 0.3s ease; /* Smooth transition */
+  margin-top: 20px; /* Space above the button */
+}
+
+.start-button:hover,
+.start-button:focus {
+  background-color: #e04f00; /* Darker background on hover/focus */
+  transform: scale(1.1);
+  outline: none; /* Remove default outline */
+}
+
+h1{
+  margin-top: 10px;
+  font-size: 60px;
+  font-weight: bold;
+  /* max-width: 450px; */
+}
+
+.highlight-timetrek{
+  color: #FF5F0F;
+}
+
+
+.desp {
+  font-size: 16px; /* Adjust the font size */
+  line-height: 1.5; /* Adjust the line height for readability */
+  max-width: 450px; /* Adjust the max width to control text wrapping */
+  margin-right: 40px;
+  font-weight: 500;
+}
+
+.sub-title{
+  margin-top: -40px ;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-size: 9px;
+  font-weight: 300;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.navbar-logo{
+  width: 150px;
+  height: auto;
+  margin-left: 60%;
+}
+
+.nav-link {
+  color: #000; /* Default text color */
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.nav-link:hover {
+  color: #FF5F00; /* Change color on hover */
+}

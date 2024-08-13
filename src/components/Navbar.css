@@ -1,0 +1,114 @@
+/* Navbar container styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  10px 20px;
+    background-color: #fff; /* Optional background color */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    position: relative; /* Ensure the dropdown is positioned relative to the navbar */
+  }
+  
+  /* Logo section */
+  .navbar-logo {
+    margin: 0 20px; /* Margin left and right */
+  }
+  
+  .navbar-logo img {
+    width: 150px; /* Keep the width as is */
+    height: auto;
+  }
+  
+  /* Navigation links section (desktop) */
+  .navbar-links {
+    display: flex;
+    gap: 20px; /* Space between navigation items */
+    margin: 0 20px; /* Margin left and right */
+  }
+  
+  .navbar-link {
+    color: black;
+    text-decoration: none;
+    font-size: 20px; /* Keep font size as is */
+    font-weight: 600; /* Slightly bolder text */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and transform transition */
+  }
+  
+  .navbar-link:hover {
+    color: #ff5f0f; /* Change color on hover */
+    text-decoration: underline;
+    transform: translateY(-2px); /* Slight upward shift on hover */
+  }
+  
+  /* Menu icon section (mobile) */
+  .menu-icon {
+    display: none; /* Hide the menu icon by default */
+    cursor: pointer;
+    margin: 0 20px; /* Margin left and right */
+  }
+  
+  .menu-icon img {
+    width: 30px; /* Keep width as is */
+    height: auto;
+  }
+  
+  /* Dropdown menu styling (mobile) */
+  .dropdown-menu {
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 100%; /* Position below the navbar */
+    right: 20px; /* Align to the right side */
+    background-color: #fff; /* Background color of the dropdown */
+    width: 200px; /* Width of the dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for dropdown */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    transform: translateY(-20px); /* Hide effect */
+    opacity: 0; /* Hide effect */
+    z-index: 1000; /* Ensure the dropdown is above other elements */
+  }
+  
+  .dropdown-menu.open {
+    display: block; /* Show the dropdown */
+    transform: translateY(0); /* Slide down effect */
+    opacity: 1; /* Make the dropdown visible */
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px; /* Slightly smaller font size */
+    font-weight: 600; /* Slightly bolder text */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth background and color transition */
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+    color: #ff5f0f; /* Change text color on hover */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: row; /* Stack logo and links vertically */
+      align-items: flex-start; /* Align items to the start */
+      padding: 10px; /* Adjust padding for better spacing */
+    }
+  
+    .navbar-logo {
+      margin-bottom: 10px; /* Space between logo and menu */
+    }
+  
+    .navbar-links {
+      display: none; /* Hide the links by default on small screens */
+    }
+  
+    .menu-icon {
+      display: block; /* Show the menu icon on small screens */
+      
+    }
+  }
+  
